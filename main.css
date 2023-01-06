@@ -13,6 +13,7 @@
   --rojo-oscuro: #b22b3b;
   --café: #2f1015;
   --amarillo: #f09433;
+  --borgoña: #800000;
 }
 
 html {
@@ -33,13 +34,7 @@ body {
     right: 0;
   }
 
-h1{
-  
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 
 h1 a:hover{
   background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
@@ -48,12 +43,9 @@ h1 a:hover{
 }
 
 h1 a{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
   list-style: none;
-  color: var(--rojo)
+  color: #800000;
 }
 
 .nav {
