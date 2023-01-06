@@ -190,7 +190,7 @@ grid-column: 1;
 }
 
 .blogs-news-info-container h2{
-color: #b22b3b;
+color: var(--borgoña);
 }
 .blogs-news-info-container p{
   margin-bottom: 35px;
@@ -208,5 +208,5 @@ footer p{
   align-items: center;
   justify-content: center;
   padding: 20px;
-  color: #b22b3b;
+  color: var(--borgoña);
 }
