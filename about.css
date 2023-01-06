@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rojo: #ee434f;
+  --rojo-oscuro: #b22b3b;
+  --café: #2f1015;
+  --amarillo: #f09433;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: lighter;
+  height: 100vh;
+}
+
+.blogs-main{
+  display: grid;
+}
+
+.blogs-news-container{
+  background-color: gray;
+  padding: 0 50px 40px;
+}
