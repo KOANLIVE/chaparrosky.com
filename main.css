@@ -18,12 +18,14 @@
 
 html {
   scroll-behavior: smooth;
+ 
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0;  
+  padding: 0;
+  
   }
 
   .home-body{
@@ -94,7 +96,7 @@ h1 a{
 }
 
 .nav__menu a:hover{
-  color: #2575A1;
+  color: var(--café);
 }
 
 .nav__menu li:first-child {
@@ -106,6 +108,7 @@ h1 a{
   text-decoration: none;
   color: #b22b3b;
   font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .menu__logo {
@@ -131,13 +134,6 @@ h1 a{
 }
 
 
-.main-text h1{
-  max-width: 90%;
- display: flex;
- align-items: center;
- justify-content: center;
-}
-
 .main-text p{
   max-width: 80%;
 
@@ -149,11 +145,6 @@ div .main-image{
   background-repeat: no-repeat;
   background-size: cover;
   
-}
-
-.box{
-  position: relative;
-  display: inline-block;
 }
 
 .blogs-main{
@@ -183,7 +174,8 @@ grid-column: 1;
 
 .blogs-news-img-container img{
   width: 85%;
-}
+  height: auto;
+  }
 
 .blogs-news-info-container{
   grid-column: 2;
@@ -191,22 +183,89 @@ grid-column: 1;
 
 .blogs-news-info-container h2{
 color: var(--borgoña);
+margin-top: 15px;
 }
 .blogs-news-info-container p{
   margin-bottom: 35px;
 }
 
-.blogs-news-info-container button{
+.blogs-news-info-container .ancor{
   padding: 10px;
   background-color: #f09433;
   border-radius: 5px;
   border: none;
+  text-decoration: none;
+  color: var(--café);
+  font-weight: bold;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+    }
+
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  object-fit: cover;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 40px;
+  color: var(--borgoña );
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  
+  .fade-in.show {
+    opacity: 1;
+  }
+
+
+
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: var(--borgoña);
+  text-align: center;
+  border-top: 1px solid var(--maderafuerte);
+  
 }
 
 footer p{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  color: var(--borgoña);
+  padding: 30px 10px 0 10px;
+  margin: 0px;
+  color: var(--amarillo);
+  font-weight: bolder;
 }
