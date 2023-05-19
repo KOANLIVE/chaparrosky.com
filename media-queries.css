@@ -2,6 +2,7 @@
   .blogs-main-news{
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
+    
   }
   .blogs-news-img-container{
     grid-row: 2;
@@ -31,9 +32,13 @@
         position: fixed;
         bottom: 0;
       }
-      
+      .slider img {
+        object-position: center center;
+      }
+   
     }
 
+  
 
 
 

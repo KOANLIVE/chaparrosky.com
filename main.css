@@ -83,10 +83,12 @@ h1 a{
 
 .nav__menu {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  margin: 2rem 1rem 0 1rem;
+  margin: 1rem 1rem 1rem 1rem;
   background-color: white;
 }
 
@@ -217,6 +219,7 @@ margin-top: 15px;
   opacity: 0;
   transition: opacity 0.5s ease;
   object-fit: cover;
+  
 }
 
 .slider img.active {

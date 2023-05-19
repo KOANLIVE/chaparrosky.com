@@ -1,0 +1,22 @@
+@media (max-width: 900px){
+    button{
+        margin-top: 550px;
+        height: 72px;
+        left: 39px;
+        top: 501px;
+        border-radius: 7px;
+        font-weight: bolder;
+    }
+}
+
+@media (max-width: 767px) {
+  body {
+    background-position: center top;
+  }
+} 
+
+@media (min-width: 370px){
+        button{
+        width: 90%;
+        }
+        }
